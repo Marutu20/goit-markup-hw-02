@@ -5,39 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Homework1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Homework1</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!--Header section-->
-    <header>
-      <h2><a href="https://facebook.com">WebStudio</a></h2>
-      <nav>
+    <!--Global Header section-->
+    <header class="global-header">
+      <h2>
+        <a href="index.html" class="company-logo"
+          ><span class="web-logo">Web</span>Studio</a
+        >
+      </h2>
+      <nav class="main-navigation">
         <ul>
           <li>
-            <a href="">Studio</a
-            ><img src="images/Vector.png" alt="hand_pointer" />
+            <a href="index.html" class="active">Studio</a>
           </li>
-          <li><a href="">Portofolio</a></li>
-          <li><a href="">Contacts</a></li>
+          <li>
+            <a href="portofolio.html" class="active">Portofolio</a>
+          </li>
+          <li><a href="" class="active">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contacts">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a
-          ><img src="images/Vector.png" alt="hand_pointer" />
+          <a href="mailto:info@devstudio.com" class="active"
+            >info@devstudio.com</a
+          >
         </li>
-        <li><a href="tel:+1 212-772-4150">+1 212-772-4150</a></li>
+        <li>
+          <a href="tel:+1 212-772-4150" class="active">+1 212-772-4150</a>
+        </li>
       </ul>
     </header>
     <!--Main Section-->
     <main>
-      <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-      <button>Request our service</button>
-      <section>
+      <section class="hero-section">
+        <h1 class="main-tittle-text">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <button class="main-page-button">Request our service</button>
+      </section>
+      <!--About page section-->
+      <section class="about-page-section">
         <h4>ATTENTION TO DETAILS</h4>
         <p>
           We go into all the details and processes of your business to develop a
@@ -59,7 +73,8 @@
           work processes.
         </p>
       </section>
-      <section>
+      <!--What we do section-->
+      <section class="what-we-do-section">
         <h2>What we do</h2>
         <img
           src="images/write_on_keyboard.jpg"
@@ -69,49 +84,72 @@
         <img src="images/phone_in_hand.jpg" alt="phone_in_hand" width="370" />
         <img src="images/tablet_in_hand.jpg" alt="tablet_in_hand" width="370" />
       </section>
-
-      <section>
+      <!--Our Team section-->
+      <section class="our-team-section">
         <h2>Our Team</h2>
-        <img
-          src="images/christopher_walker.jpg"
-          alt="CHristopher Walker"
-          width="270"
-          height="260"
-        />
-        <br />
-        <span><b>Christopher Walker</b></span>
-        <p>Product Designer</p>
-        <img
-          src="images/kylie_evans.jpg"
-          alt="Kylie Evans"
-          width="270"
-          height="260"
-        />
-        <br />
-        <span><b>Kylie Evans</b></span>
-        <p>Frontend Developer</p>
-        <img
-          src="images/ryan_harris.jpg"
-          alt="Ryan Harris"
-          width="270"
-          height="260"
-        />
-        <br />
-        <span><b>Ryan Harris</b></span>
-        <p>Marketing</p>
-        <img
-          src="images/tyler_moore.jpg"
-          alt="Tyler Moore"
-          width="270"
-          height="260"
-        />
-        <br />
-        <span><b>Tyler Moore</b></span>
-        <p>UI Designer</p>
+        <ul>
+          <li>
+            <div>
+              <img
+                src="images/christopher_walker.jpg"
+                alt="Christopher Walker"
+                width="270"
+                height="260"
+              />
+              <br />
+              <span>Christopher Walker</span>
+              <p>Product Designer</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                src="images/kylie_evans.jpg"
+                alt="Kylie Evans"
+                width="270"
+                height="260"
+              />
+              <br />
+              <span>Kylie Evans</span>
+              <p>Frontend Developer</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                src="images/ryan_harris.jpg"
+                alt="Ryan Harris"
+                width="270"
+                height="260"
+              />
+              <br />
+              <span>Ryan Harris</span>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                src="images/tyler_moore.jpg"
+                alt="Tyler Moore"
+                width="270"
+                height="260"
+              />
+              <br />
+              <span>Tyler Moore</span>
+              <p>UI Designer</p>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer>
-      <h2><a href="https://facebook.com">WebStudio</a></h2>
+    <!--Footer section-->
+    <footer class="global-footer">
+      <h2>
+        <a href="index.html" class="company-logo"
+          ><span class="web-logo">Web</span>Studio</a
+        >
+      </h2>
       <address>
         <ul>
           <li>695 Park Ave, NY 10065, USA</li>
